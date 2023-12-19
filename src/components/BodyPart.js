@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
-import Icon from '../assets/icons/gym.png';
+import { CgGym } from "react-icons/cg";
+
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => (
   <Stack
@@ -14,8 +15,9 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
       window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
     }}
   >
-    <img src={Icon} alt="dumbbell" style={{ width: '40px', height: '40px' }} />
-    <Typography fontSize="24px" fontWeight="bold" fontFamily="Alegreya" color="#3A1212" textTransform="capitalize"> {item}</Typography>
+    <CgGym style={{ width: '40px', height: '40px', color:'#0E8388' }} />
+    
+    <Typography fontSize="24px" fontWeight="bold" fontFamily="Alegreya" color="#2E4F4F" textTransform="capitalize"> {item}</Typography>
   </Stack>
 );
 
