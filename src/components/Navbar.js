@@ -5,9 +5,9 @@ import { Stack } from '@mui/material';
 import Logo from '../assets/images/Logo-2.png';
 
 const Navbar = () => (
-  <Stack direction="row" justifyContent="space-around" sx={{ gap: { sm: '123px', xs: '40px' }, mt: { sm: '32px', xs: '20px' }, justifyContent: 'none' }} px="20px">
+  <Stack  display="flex" direction="row" justifyContent="center" sx={{ gap: { sm: '123px', xs: '40px' }, mt: { sm: '32px', xs: '20px' }, justifyContent: 'none' }} px="20px">
     <Link to="/">
-      <img src={Logo} alt="logo" style={{ width: '48px', height: '48px', margin: '0px 20px' }} />
+      <img src={Logo} alt="logo" style={{ width: '150px', height: '150px', marginBottom: "-50px" }} />
     </Link>
     <Stack
       direction="row"
